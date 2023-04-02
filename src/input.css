@@ -8,11 +8,68 @@
   body {
     font-family: "Rubik", sans-serif;
   }
-  .mainText {
+
+  h1 {
     font-weight: 700;
-    font-size: 56px;
-    line-height: 120%;
     letter-spacing: -0.01em;
+    line-height: 120%;
+  }
+
+  input {
+    border-radius: 4px;
+    width: 495.67px;
+    outline: none;
+    padding: 15.5px 16px;
+    color: #9d9dbd;
+  }
+
+  small {
+    font-size: 16px;
+    line-height: 150%;
+  }
+
+  #mainShowcase h1 {
+    font-size: 56px;
+  }
+
+  #demos h1 {
+    font-size: 48px;
+  }
+
+  #contact h1 {
+    font-size: 64px;
+    text-align: center;
+  }
+
+  .card h4 {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 140%;
+  }
+
+  #testimonials .card {
+    box-shadow: 0px 1px 3px rgba(16, 24, 40, 0.1),
+      0px 1px 2px rgba(16, 24, 40, 0.06);
+    border-radius: 4px;
+  }
+
+  #testimonials .card p {
+    font-size: 16px;
+    line-height: 155%;
+    letter-spacing: 0.02em;
+    color: #505056;
+  }
+
+  #testimonials .card h6 {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 155%;
+    letter-spacing: 0.02em;
+    color: #0e1133;
+  }
+
+  #testimonials h1 {
+    font-size: 48px;
   }
 
   .mainContent p {
@@ -49,22 +106,51 @@
     letter-spacing: -0.01em;
   }
 
-  #demos h1 {
-    font-weight: 700;
-    font-size: 48px;
-    line-height: 120%;
-    letter-spacing: -0.01em;
-  }
-
   #domos p {
     font-size: 16px;
     line-height: 155%;
     letter-spacing: 0.02em;
   }
 
-  .card h4 {
-    font-weight: 700;
+  .btn {
+    padding: 15.5px 28px;
+    border-radius: 10px;
+    font-size: 16px;
+    line-height: 155%;
+    letter-spacing: 0.02em;
+    color: #fff;
+  }
+
+  #contact p {
+    font-size: 21.3333px;
+    line-height: 155%;
+    letter-spacing: 0.02em;
+  }
+
+  footer ul li {
+    line-height: 26px;
+    margin-bottom: 20px;
+  }
+
+  footer ul li:first-child {
+    font-weight: 500;
     font-size: 20px;
-    line-height: 140%;
+    line-height: 150%;
+    letter-spacing: -0.01em;
+    color: #fff;
+    margin-bottom: 32px;
+  }
+
+  @media (max-width: 1280px) {
+    #mainShowcase h1 {
+      font-size: 35px;
+    }
+
+    h1 {
+      font-size: 35px !important;
+    }
+    #mainShowcase .hero-img {
+      width: 500px;
+    }
   }
 }

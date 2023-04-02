@@ -6,6 +6,7 @@ module.exports = {
       blue: "#007AFF",
       bodyColor: "#0E1133",
       white: "#fff",
+      lightBrown: "#FBAF5B",
     },
     container: {
       screens: {
