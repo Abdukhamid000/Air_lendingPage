@@ -23,6 +23,12 @@ module.exports = {
       },
       center: true,
     },
+
+    extend: {
+      backgroundImage: {
+        group: "url('/src/images/Group 1990.png')",
+      },
+    },
   },
   plugins: [],
 };

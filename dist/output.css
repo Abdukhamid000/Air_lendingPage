@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap");
+
 /*
 ! tailwindcss v3.3.1 | MIT License | https://tailwindcss.com
 */
@@ -422,7 +424,7 @@ video {
   display: none;
 }
 
-*, ::before, ::after {
+*, ::before, ::after{
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
   --tw-translate-x: 0;
@@ -469,7 +471,7 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-::backdrop {
+::backdrop{
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
   --tw-translate-x: 0;
@@ -516,34 +518,38 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-.container {
+.container{
   width: 100%;
   margin-right: auto;
   margin-left: auto;
 }
 
-@media (min-width: 640px) {
-  .container {
+@media (min-width: 640px){
+  .container{
     max-width: 640px;
   }
 }
 
-@media (min-width: 768px) {
-  .container {
+@media (min-width: 768px){
+  .container{
     max-width: 768px;
   }
 }
 
-@media (min-width: 1024px) {
-  .container {
+@media (min-width: 1024px){
+  .container{
     max-width: 1024px;
   }
 }
 
-@media (min-width: 1280px) {
-  .container {
+@media (min-width: 1280px){
+  .container{
     max-width: 1280px;
   }
+}
+
+body {
+  font-family: "Rubik", sans-serif;
 }
 
 .mainText {
@@ -560,75 +566,198 @@ video {
   color: #505056;
 }
 
-.mb-10 {
+#mainShowcase,
+  header {
+  background-color: #f3f9fd;
+}
+
+#customers h4 {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 150%;
+  text-align: center;
+  letter-spacing: -0.01em;
+}
+
+#description p {
+  font-size: 16px;
+  line-height: 155%;
+  letter-spacing: 0.02em;
+  color: #505056;
+}
+
+#description h4 {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 150%;
+  letter-spacing: -0.01em;
+}
+
+#demos h1 {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 120%;
+  letter-spacing: -0.01em;
+}
+
+#domos p {
+  font-size: 16px;
+  line-height: 155%;
+  letter-spacing: 0.02em;
+}
+
+.card h4 {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 140%;
+}
+
+.my-6{
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.mb-10{
   margin-bottom: 2.5rem;
 }
 
-.mt-6 {
+.mb-12{
+  margin-bottom: 3rem;
+}
+
+.mb-20{
+  margin-bottom: 5rem;
+}
+
+.mt-20{
+  margin-top: 5rem;
+}
+
+.mt-6{
   margin-top: 1.5rem;
 }
 
-.flex {
+.mt-4{
+  margin-top: 1rem;
+}
+
+.flex{
   display: flex;
 }
 
-.items-center {
+.flex-col{
+  flex-direction: column;
+}
+
+.items-start{
+  align-items: flex-start;
+}
+
+.items-center{
   align-items: center;
 }
 
-.justify-between {
+.justify-end{
+  justify-content: flex-end;
+}
+
+.justify-center{
+  justify-content: center;
+}
+
+.justify-between{
   justify-content: space-between;
 }
 
-.gap-x-11 {
+.gap-4{
+  gap: 1rem;
+}
+
+.gap-x-11{
   -moz-column-gap: 2.75rem;
        column-gap: 2.75rem;
 }
 
-.gap-x-\[116px\] {
+.gap-x-\[116px\]{
   -moz-column-gap: 116px;
        column-gap: 116px;
 }
 
-.gap-x-\[60px\] {
+.gap-x-\[236px\]{
+  -moz-column-gap: 236px;
+       column-gap: 236px;
+}
+
+.gap-x-\[60px\]{
   -moz-column-gap: 60px;
        column-gap: 60px;
 }
 
-.rounded-lg {
+.gap-x-5{
+  -moz-column-gap: 1.25rem;
+       column-gap: 1.25rem;
+}
+
+.rounded-lg{
   border-radius: 0.5rem;
 }
 
-.bg-blue {
+.bg-blue{
   --tw-bg-opacity: 1;
   background-color: rgb(0 122 255 / var(--tw-bg-opacity));
 }
 
-.px-4 {
+.bg-bodyColor{
+  --tw-bg-opacity: 1;
+  background-color: rgb(14 17 51 / var(--tw-bg-opacity));
+}
+
+.p-6{
+  padding: 1.5rem;
+}
+
+.px-4{
   padding-left: 1rem;
   padding-right: 1rem;
 }
 
-.px-7 {
+.px-7{
   padding-left: 1.75rem;
   padding-right: 1.75rem;
 }
 
-.py-4 {
+.py-4{
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
 
-.pt-7 {
+.py-\[100px\]{
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.pb-\[100px\]{
+  padding-bottom: 100px;
+}
+
+.pt-7{
   padding-top: 1.75rem;
 }
 
-.text-bodyColor {
+.pt-\[185px\]{
+  padding-top: 185px;
+}
+
+.text-center{
+  text-align: center;
+}
+
+.text-bodyColor{
   --tw-text-opacity: 1;
   color: rgb(14 17 51 / var(--tw-text-opacity));
 }
 
-.text-white {
+.text-white{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
