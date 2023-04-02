@@ -1,7 +1,10 @@
-tailwind.config = {
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: ["./src/**/*.{html,js}"],
   theme: {
     colors: {
       blue: "#007AFF",
+      bodyColor: "#0E1133",
       white: "#fff",
     },
     container: {
@@ -21,4 +24,5 @@ tailwind.config = {
       center: true,
     },
   },
+  plugins: [],
 };

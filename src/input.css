@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .mainText {
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 120%;
+    letter-spacing: -0.01em;
+  }
+
+  .mainContent p {
+    font-size: 18px;
+    line-height: 155%;
+    letter-spacing: 0.02em;
+    color: #505056;
+  }
+}
