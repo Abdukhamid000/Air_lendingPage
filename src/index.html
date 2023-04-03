@@ -5,16 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="/dist/output.css" rel="stylesheet" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
     <title>Air</title>
   </head>
   <body>
     <header class="pt-7">
       <div class="container px-4 flex justify-between">
-        <nav class="flex items-center gap-8 xl:gap-x-[116px]">
+        <nav
+          class="flex items-center gap-8 xl:gap-x-[116px] lg:w-auto w-full justify-between"
+        >
           <div class="logo">
             <img src="./icons/Logo.svg" alt="" />
           </div>
-          <ul class="flex items-center gap-8 xl:gap-x-[60px]">
+          <ul class="lg:flex hidden items-center gap-8 xl:gap-x-[60px]">
             <li><a href="#">Demos</a></li>
             <li><a href="#">Feature</a></li>
             <li><a href="#">About</a></li>
@@ -22,8 +32,11 @@
             <li><a href="#">Testimonial</a></li>
             <li><a href="#">Contact</a></li>
           </ul>
+          <span class="text-3xl cursor-pointer mx-2 lg:hidden block">
+            <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
+          </span>
         </nav>
-        <button class="bg-blue text-white py-4 px-7 rounded-lg">
+        <button class="bg-blue hidden lg:block text-white py-4 px-7 rounded-lg">
           Get Started Free
         </button>
       </div>

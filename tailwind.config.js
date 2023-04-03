@@ -9,6 +9,7 @@ module.exports = {
       lightBrown: "#FBAF5B",
     },
     container: {
+      padding: "1rem",
       screens: {
         sm: "640px",
         // => @media (min-width: 640px) { ... }

@@ -522,6 +522,8 @@ video {
   width: 100%;
   margin-right: auto;
   margin-left: auto;
+  padding-right: 1rem;
+  padding-left: 1rem;
 }
 
 @media (min-width: 640px){
@@ -634,6 +636,12 @@ small {
   line-height: 155%;
   letter-spacing: 0.02em;
   color: #505056;
+}
+
+#blog button:hover {
+  background-color: #007aff;
+  transition: 0.5s;
+  color: #fff;
 }
 
 .price > div {
@@ -772,10 +780,6 @@ footer ul li:first-child {
   input {
     width: 255.67px;
   }
-
-  header {
-    display: none;
-  }
 }
 
 @media (max-width: 640px) {
@@ -798,6 +802,11 @@ footer ul li:first-child {
   .price button {
     padding: 10px;
   }
+}
+
+.mx-2{
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
 }
 
 .my-6{
@@ -876,6 +885,10 @@ footer ul li:first-child {
 
 .w-full{
   width: 100%;
+}
+
+.cursor-pointer{
+  cursor: pointer;
 }
 
 .grid-cols-1{
@@ -1097,6 +1110,11 @@ footer ul li:first-child {
   text-align: center;
 }
 
+.text-3xl{
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
 .text-\[\#E4E4E7\]{
   --tw-text-opacity: 1;
   color: rgb(228 228 231 / var(--tw-text-opacity));
@@ -1136,8 +1154,20 @@ footer ul li:first-child {
 }
 
 @media (min-width: 1024px){
+  .lg\:block{
+    display: block;
+  }
+
   .lg\:flex{
     display: flex;
+  }
+
+  .lg\:hidden{
+    display: none;
+  }
+
+  .lg\:w-auto{
+    width: auto;
   }
 }
 
