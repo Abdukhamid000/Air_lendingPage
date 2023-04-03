@@ -7,6 +7,7 @@ module.exports = {
       bodyColor: "#0E1133",
       white: "#fff",
       lightBrown: "#FBAF5B",
+      silver: "#A1A1AA",
     },
     container: {
       padding: "1rem",

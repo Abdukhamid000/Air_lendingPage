@@ -760,6 +760,10 @@ footer ul li:first-child {
   margin-bottom: 32px;
 }
 
+.footer-b li{
+  margin-bottom: 0 !important;
+}
+
 @media (max-width: 1280px) {
   #mainShowcase h1 {
     font-size: 35px;
@@ -861,6 +865,10 @@ footer ul li:first-child {
 
 .mt-8{
   margin-top: 2rem;
+}
+
+.mt-\[125px\]{
+  margin-top: 125px;
 }
 
 .block{
@@ -982,9 +990,18 @@ footer ul li:first-child {
   border-width: 1px;
 }
 
+.border-t{
+  border-top-width: 1px;
+}
+
 .border-blue{
   --tw-border-opacity: 1;
   border-color: rgb(0 122 255 / var(--tw-border-opacity));
+}
+
+.border-white{
+  --tw-border-opacity: 1;
+  border-color: rgb(255 255 255 / var(--tw-border-opacity));
 }
 
 .bg-\[\#0F172A\]{
@@ -1048,6 +1065,11 @@ footer ul li:first-child {
 .px-7{
   padding-left: 1.75rem;
   padding-right: 1.75rem;
+}
+
+.py-10{
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
 }
 
 .py-4{
@@ -1133,6 +1155,11 @@ footer ul li:first-child {
 .text-white{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-silver{
+  --tw-text-opacity: 1;
+  color: rgb(161 161 170 / var(--tw-text-opacity));
 }
 
 .underline{

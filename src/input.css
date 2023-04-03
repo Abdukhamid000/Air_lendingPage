@@ -223,6 +223,10 @@
     margin-bottom: 32px;
   }
 
+  .footer-b li{
+    margin-bottom: 0 !important;
+  }
+
   @media (max-width: 1280px) {
     #mainShowcase h1 {
       font-size: 35px;
