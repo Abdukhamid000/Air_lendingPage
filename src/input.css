@@ -80,8 +80,65 @@
   }
 
   #mainShowcase,
-  header {
+  header,
+  #blog {
     background-color: #f3f9fd;
+  }
+
+  #blog h1 {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 120%;
+    text-align: center;
+    letter-spacing: -0.01em;
+  }
+
+  #blog p {
+    font-size: 16px;
+    line-height: 155%;
+    letter-spacing: 0.02em;
+    color: #505056;
+  }
+
+  .price > div {
+    box-shadow: 0px 1px 3px rgba(16, 24, 40, 0.1),
+      0px 1px 2px rgba(16, 24, 40, 0.06);
+    border-radius: 6px;
+  }
+
+  .price button {
+    padding: 15px 63.5px;
+    border: 1px solid #007aff;
+    border-radius: 4px;
+    font-size: 16px;
+    line-height: 155%;
+  }
+
+  .price span {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 120%;
+
+    letter-spacing: -0.01em;
+  }
+
+  .price sub {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 155%;
+    letter-spacing: 0.02em;
+    color: #71717a;
+  }
+
+  .price li {
+    font-size: 16px;
+    line-height: 155%;
+    letter-spacing: 0.02em;
+    color: #505056;
+  }
+
+  .price-border {
+    border-bottom: 0.8px solid #9fcdff;
   }
 
   #customers h4 {
@@ -151,6 +208,14 @@
     }
     #mainShowcase .hero-img {
       width: 500px;
+    }
+
+    #contact p { 
+      font-size: 16px;
+    }
+
+    input {
+      width: 255.67px;
     }
   }
 }
