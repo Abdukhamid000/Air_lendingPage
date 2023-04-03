@@ -27,7 +27,9 @@ module.exports = {
 
     extend: {
       backgroundImage: {
-        group: "url('/src/images/Group 1990.png')",
+        group:
+          "url('/src/images/iPhone 12 Pro mockup.png'), url('/src/images/iphone12Back.png')",
+        iphone12Back: "url('/src/images/Group 1990.png')",
       },
     },
   },

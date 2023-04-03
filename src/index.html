@@ -30,14 +30,16 @@
     </header>
     <main>
       <section id="mainShowcase" class="pb-[100px]">
-        <div class="container md:flex items-center">
+        <div
+          class="container flex flex-col justify-center md:flex-row items-center"
+        >
           <img src="./images/HeroImage.png" class="hero-img" alt="" />
           <div class="mainContentx">
-            <h1 class="text-bodyColor">
+            <h1 class="text-bodyColor text-center xl:text-left">
               Discover How Trending <br />
               Apps Can Benefit You
             </h1>
-            <p class="mt-6 mb-10">
+            <p class="mt-6 mb-10 text-center xl:text-left">
               Boost your productivity with a simple to-do app. A mobile
               application <br />
               Budgeting for your personal life
@@ -116,14 +118,15 @@
 
       <section id="demos" class="bg-bodyColor pt-[185px]">
         <div class="container lg:flex">
-          <img
-            class="demo-img bg-contain"
-            src="./images/Group 1990.png"
-            height="700px"
-            width="600px"
-            alt=""
-          />
-          <div class="text-white">
+          <div class="w-full h-full hidden xl:block">
+            <img
+              src="./images/Group 1990.png"
+              height="100%"
+              width="100%"
+              alt=""
+            />
+          </div>
+          <div class="text-white pb-[207px]">
             <h1>Air simplifies the organization of your web applications</h1>
             <p class="mt-6 mb-12">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -131,7 +134,7 @@
               mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam
               libero vitae erat.
             </p>
-            <div class="flex">
+            <div class="md:flex">
               <div class="card flex items-start gap-x-5">
                 <img src="./icons/share.svg" alt="" />
                 <div>
@@ -157,7 +160,76 @@
         </div>
       </section>
 
-      <section id="feature"></section>
+      <section id="feature" class="pt-[120px] pb-7">
+        <div class="flex container">
+          <div>
+            <h1>
+              Keeping track of your expenses <br />
+              is made easy with this app
+            </h1>
+            <p class="mt-6">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Suspendisse varius enim in eros <br />
+              elementum tristique. Duis cursus, mi quis viverra ornare, eros
+              dolor interdum nulla, ut commodo diam libero vitae erat.
+            </p>
+            <div class="grid mt-10 gap-12 grid-cols-1 xl:grid-cols-2">
+              <div class="flex items-start justify-center gap-x-4">
+                <img
+                  src="./icons/checked2.svg"
+                  height="32px"
+                  width="32px"
+                  alt=""
+                />
+                <div>
+                  <h4>Carefully designed</h4>
+                  <p class="mt-4">
+                    Mucker plastered bugger all mate morish are eroselna culpa
+                    expedita.
+                  </p>
+                </div>
+              </div>
+              <div class="flex items-start justify-center gap-x-4">
+                <img src="./icons/checked2.svg" alt="" />
+                <div>
+                  <h4>Carefully designed</h4>
+                  <p class="mt-4">
+                    Mucker plastered bugger all mate morish are eroselna culpa
+                    expedita.
+                  </p>
+                </div>
+              </div>
+              <div class="flex items-start justify-center gap-x-4">
+                <img src="./icons/checked2.svg" alt="" />
+                <div>
+                  <h4>Carefully designed</h4>
+                  <p class="mt-4">
+                    Mucker plastered bugger all mate morish are eroselna culpa
+                    expedita.
+                  </p>
+                </div>
+              </div>
+              <div class="flex items-start justify-center gap-x-4">
+                <img src="./icons/checked2.svg" alt="" />
+                <div>
+                  <h4>Carefully designed</h4>
+                  <p class="mt-4">
+                    Mucker plastered bugger all mate morish are eroselna culpa
+                    expedita.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <button class="btn mt-12 border-blue border text-blue">
+              Learn More
+            </button>
+          </div>
+          <div
+            class="bg-group hidden xl:block bg-no-repeat bg-contain bg-right"
+            style="width: 600px"
+          ></div>
+        </div>
+      </section>
 
       <section id="blog" class="py-[120px]">
         <div class="container">
@@ -414,7 +486,9 @@
           elementum tristique. Duis cursus, mi quis viverra ornare duis cursus,
           mi quis viverra.
         </p>
-        <div class="flex gap-[21px] justify-center">
+        <div
+          class="flex flex-col md:flex-row items-center gap-[21px] justify-center"
+        >
           <input type="text" placeholder="Enter your email" />
           <button class="btn bg-lightBrown">
             <a href="#">Download App</a>
@@ -427,7 +501,9 @@
       </section>
 
       <footer class="bg-[#0F172A] pt-[122px]">
-        <div class="container grid grid-cols-4 gap-x-4 px-4">
+        <div
+          class="container grid grid-cols-2 justify-center md:grid-cols-4 gap-x-4 px-4"
+        >
           <ul class="text-[#E4E4E7]">
             <li>
               <a href="#">Company</a>

@@ -684,6 +684,19 @@ small {
   letter-spacing: -0.01em;
 }
 
+#feature h1 {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 120%;
+  letter-spacing: -0.01em;
+}
+
+#feature h4 {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 140%;
+}
+
 #description p {
   font-size: 16px;
   line-height: 155%;
@@ -711,6 +724,12 @@ small {
   line-height: 155%;
   letter-spacing: 0.02em;
   color: #fff;
+}
+
+.btn:hover {
+  background-color: #007aff;
+  color: #fff;
+  transition: 0.5s;
 }
 
 #contact p {
@@ -743,7 +762,7 @@ footer ul li:first-child {
   }
 
   #mainShowcase .hero-img {
-    width: 500px;
+    width: 400px;
   }
 
   #contact p {
@@ -752,6 +771,32 @@ footer ul li:first-child {
 
   input {
     width: 255.67px;
+  }
+
+  header {
+    display: none;
+  }
+}
+
+@media (max-width: 640px) {
+  #mainShowcase .hero-img {
+    width: 375px;
+  }
+
+  h1 {
+    font-size: 17px !important;
+  }
+
+  h4 {
+    font-size: 17px !important;
+  }
+
+  p {
+    font-size: 15px !important;
+  }
+
+  .price button {
+    padding: 10px;
   }
 }
 
@@ -783,6 +828,10 @@ footer ul li:first-child {
 
 .mt-10{
   margin-top: 2.5rem;
+}
+
+.mt-12{
+  margin-top: 3rem;
 }
 
 .mt-20{
@@ -817,8 +866,24 @@ footer ul li:first-child {
   display: grid;
 }
 
-.grid-cols-4{
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+.hidden{
+  display: none;
+}
+
+.h-full{
+  height: 100%;
+}
+
+.w-full{
+  width: 100%;
+}
+
+.grid-cols-1{
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+.grid-cols-2{
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .flex-col{
@@ -845,6 +910,14 @@ footer ul li:first-child {
   justify-content: space-between;
 }
 
+.gap-10{
+  gap: 2.5rem;
+}
+
+.gap-12{
+  gap: 3rem;
+}
+
 .gap-5{
   gap: 1.25rem;
 }
@@ -859,15 +932,6 @@ footer ul li:first-child {
 
 .gap-\[31px\]{
   gap: 31px;
-}
-
-.gap-10{
-  gap: 2.5rem;
-}
-
-.gap-x-10{
-  -moz-column-gap: 2.5rem;
-       column-gap: 2.5rem;
 }
 
 .gap-x-11{
@@ -901,6 +965,15 @@ footer ul li:first-child {
   border-radius: 0.5rem;
 }
 
+.border{
+  border-width: 1px;
+}
+
+.border-blue{
+  --tw-border-opacity: 1;
+  border-color: rgb(0 122 255 / var(--tw-border-opacity));
+}
+
 .bg-\[\#0F172A\]{
   --tw-bg-opacity: 1;
   background-color: rgb(15 23 42 / var(--tw-bg-opacity));
@@ -926,8 +999,20 @@ footer ul li:first-child {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.bg-group{
+  background-image: url('/src/images/iPhone 12 Pro mockup.png'), url('/src/images/iphone12Back.png');
+}
+
 .bg-contain{
   background-size: contain;
+}
+
+.bg-right{
+  background-position: right;
+}
+
+.bg-no-repeat{
+  background-repeat: no-repeat;
 }
 
 .p-6{
@@ -980,12 +1065,20 @@ footer ul li:first-child {
   padding-bottom: 100px;
 }
 
+.pb-\[207px\]{
+  padding-bottom: 207px;
+}
+
 .pt-7{
   padding-top: 1.75rem;
 }
 
 .pt-8{
   padding-top: 2rem;
+}
+
+.pt-\[120px\]{
+  padding-top: 120px;
 }
 
 .pt-\[122px\]{
@@ -1032,6 +1125,14 @@ footer ul li:first-child {
   .md\:flex{
     display: flex;
   }
+
+  .md\:grid-cols-4{
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .md\:flex-row{
+    flex-direction: row;
+  }
 }
 
 @media (min-width: 1024px){
@@ -1041,6 +1142,10 @@ footer ul li:first-child {
 }
 
 @media (min-width: 1280px){
+  .xl\:block{
+    display: block;
+  }
+
   .xl\:flex{
     display: flex;
   }
@@ -1066,5 +1171,9 @@ footer ul li:first-child {
   .xl\:gap-x-\[60px\]{
     -moz-column-gap: 60px;
          column-gap: 60px;
+  }
+
+  .xl\:text-left{
+    text-align: left;
   }
 }

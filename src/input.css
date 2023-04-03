@@ -149,6 +149,19 @@
     letter-spacing: -0.01em;
   }
 
+  #feature h1 {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 120%;
+    letter-spacing: -0.01em;
+  }
+
+  #feature h4 {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 140%;
+  }
+
   #description p {
     font-size: 16px;
     line-height: 155%;
@@ -176,6 +189,12 @@
     line-height: 155%;
     letter-spacing: 0.02em;
     color: #fff;
+  }
+
+  .btn:hover {
+    background-color: #007aff;
+    color: #fff;
+    transition: 0.5s;
   }
 
   #contact p {
@@ -207,15 +226,42 @@
       font-size: 35px !important;
     }
     #mainShowcase .hero-img {
-      width: 500px;
+      width: 400px;
     }
 
-    #contact p { 
+    #contact p {
       font-size: 16px;
     }
 
     input {
       width: 255.67px;
+    }
+
+    header {
+      display: none;
+    }
+  }
+
+  @media (max-width: 640px) {
+
+    #mainShowcase .hero-img {
+      width: 375px;
+    }
+
+    h1 {
+      font-size: 17px !important;
+    }
+
+    h4 {
+      font-size: 17px !important;
+    }
+
+    p {
+      font-size: 15px !important;
+    }
+
+    .price button {
+      padding: 10px;
     }
   }
 }
